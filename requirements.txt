@@ -1,0 +1,5 @@
+crewai[google-genai]
+python-dotenv
+bandit
+flake8
+pydocstyle

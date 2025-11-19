@@ -1,20 +1,19 @@
 #  CrewAI-Powered Code Reviewer
 
-A lightweight, multi-agent code review system built with **CrewAI** that analyzes Python files for common issues — no fluff, just actionable feedback.
+A lightweight, multi-agent code review system built with **CrewAI** that analyzes Python files for common issues.
 
 ##  What It Checks
 
-- ** Security**: Finds SQL injection, unsafe patterns (via `bandit`)
-- ** Performance**: Flags inefficient loops, bad I/O habits
-- ** Style**: Enforces PEP8 (via `flake8`)
-- ** Documentation**: Validates Google-style docstrings (via `pydocstyle`)
+- **Security**: Finds SQL injection, unsafe patterns (via `bandit`)
+- **Performance**: Inefficient loops, bad I/O habits
+- **Style**: Enforces PEP8 (via `flake8`)
+- **Documentation**: Validates Google-style docstrings (via `pydocstyle`)
 
-Each check is handled by a dedicated AI agent that explains issues in plain English — powered by **Gemini** (free tier works great!).
+Each check is handled by a dedicated AI agent that explains issues in plain English using **Gemini** .
 
 ##  Quick Start
 
-1. **Get a Gemini API key**  
-   → [Create one here (free)](https://aistudio.google.com/app/apikey)
+1. **Get a Gemini API key**
 
 2. **Set up the project**
    ```bash
