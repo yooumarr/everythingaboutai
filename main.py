@@ -23,7 +23,7 @@ def main():
 
     result = crew.kickoff()
     print("\n" + "="*60)
-    print("FINAL CODE REVIEW REPORT")
+    print("Final Report")
     print("="*60)
     print(result)
 

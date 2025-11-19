@@ -1,10 +1,8 @@
 from crewai import Agent, LLM
 import subprocess
 import os
-
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
 def scan_with_bandit(file_path):

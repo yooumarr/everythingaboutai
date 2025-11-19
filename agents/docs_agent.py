@@ -1,10 +1,9 @@
 from crewai import Agent, LLM
 import subprocess
-
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
+
 def check_docs(file_path):
     import subprocess, os
     if not os.path.exists(file_path):
@@ -20,8 +19,6 @@ def check_docs(file_path):
     except Exception as e:
         return f"Doc check failed: {e}"
 
-# Still use Ollama (in case you want future flexibility)
-# Use Gemini instead of Ollama
 llm = LLM(model="gemini/gemini-2.5-flash")
 
 documentation_agent = Agent(

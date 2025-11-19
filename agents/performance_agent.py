@@ -1,7 +1,6 @@
 from crewai import Agent, LLM
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
 def check_performance(file_path):
